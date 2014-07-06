@@ -1,3 +1,34 @@
+## VADrawerController
+
+A simple Side View Controller "Android style", appearing in front of the Main View Controller, not behind.
+
+## The purpose
+
+I never liked the feeling of Side View Controllers I found, most of them are not very responsive and usually you really need to catch the side bar very horizontally with your fingers, often you can fail at drag the side bar and this is what I hated the most. So I decided to do it by myself. I was needing a Side View Controller appearing in front of the Main View Controller, since there's not a built-in iOS SideViewController I did it and I'll try to improve it as soon as I can.
+
+## Usage
+
+Instantiate the **Main** ViewController, then instantiate your **Side** ViewController, call it like you want but make it a **subclass** of **VADrawerController**.
+
+Then go to the AppDelegate inside the **application:didFinishLaunchingWithOptions:**
+```
+// 1. setup the window @property using the VADrawerManager
+self.window = [[VADrawerManager manager] prepareWindow];
+
+// 2. attach the SideViewController to the MainViewController
+[[VADrawerManager manager] attachDrawer:SideVC toViewController:MainVC];
+
+// Done.
+```
+
+You can edit the size and appearance within Interface Builder both via XIB files or via Storyboard.
+
+## To do
+
+* options to customize the sidebar appearance (such as shadows, gray layer On/Off etc)
+* make it work on both sides
+* add it to cocoapods
+
 ## License
 
 VADrawerController Copyright (c) 2014 Vincenzo Alampi
