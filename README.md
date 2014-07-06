@@ -1,5 +1,7 @@
 ## VADrawerController
 
+![VADrawerController](http://i.imgur.com/PTavMNn.png)
+
 A simple Side View Controller "Android style", appearing in front of the Main View Controller, not behind.
 
 ## The purpose
@@ -8,6 +10,7 @@ I never liked the feeling of Side View Controllers I found, most of them are not
 
 ## Usage
 
+**Copy** the content of the **Source** folder into your project.
 Instantiate the **Main** ViewController, then instantiate your **Side** ViewController, call it like you want but make it a **subclass** of **VADrawerController**.
 
 Then go to the AppDelegate inside the **application:didFinishLaunchingWithOptions:**
@@ -21,7 +24,7 @@ self.window = [[VADrawerManager manager] prepareWindow];
 // Done.
 ```
 
-You can edit the size and appearance within Interface Builder both via XIB files or via Storyboard.
+You can edit the size and appearance within **Interface Builder** both via XIB files or via Storyboard.
 
 ## To do
 
