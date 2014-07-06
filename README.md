@@ -13,7 +13,13 @@ I never liked the feeling of Side View Controllers I found, most of them are not
 **Copy** the content of the **Source** folder into your project.
 Instantiate the **Main** ViewController, then instantiate your **Side** ViewController, call it like you want but make it a **subclass** of **VADrawerController**.
 
-Then go to the AppDelegate inside the **application:didFinishLaunchingWithOptions:**
+Then go to the AppDelegate
+
+```
+#import "VADrawerManager.h"
+```
+
+Inside the **application:didFinishLaunchingWithOptions:**
 ```
 // 1. setup the window @property using the VADrawerManager
 self.window = [[VADrawerManager manager] prepareWindow];
