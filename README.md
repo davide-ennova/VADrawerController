@@ -29,6 +29,8 @@ self.window = [[VADrawerManager manager] prepareWindow];
 
 // Done.
 ```
+You can edit the size and appearance within **Interface Builder** both via XIB files or via Storyboard.
+
 ## Buttons
 
 If you want to open / close the DrawerController with a button just call:
@@ -39,7 +41,6 @@ If you want to open / close the DrawerController with a button just call:
 // to close
 [[[VADrawerManager manager] drawer] slideToClosed];
 ```
-You can edit the size and appearance within **Interface Builder** both via XIB files or via Storyboard.
 
 ## To do
 
