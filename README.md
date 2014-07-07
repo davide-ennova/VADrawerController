@@ -11,7 +11,7 @@ I never liked the feeling of Side View Controllers I found, most of them are not
 ## Usage
 
 **Copy** the content of the **Source** folder into your project.
-Instantiate the **Main** ViewController, then instantiate your **Side** ViewController, call it like you want but make it a **subclass** of **VADrawerController**.
+Instantiate the **Main** ViewController, then instantiate your **Side** ViewController (in my example I do it in the AppDelegate), call the SideViewController like you want but make it a **subclass** of **VADrawerController**.
 
 Then go to the AppDelegate
 
